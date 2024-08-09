@@ -1,0 +1,106 @@
+.profile-edit-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-edit-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 600px;
+  max-width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-edit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.small-input {
+  font-size: 14px;
+  .mat-form-field-wrapper {
+    padding-bottom: 0.5em;
+  }
+  .mat-form-field-infix {
+    padding: 0.5em 0;
+  }
+}
+
+.photo-section {
+  margin-bottom: 16px;
+
+  h3 {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.profile-picture-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cover-photo-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 12px;
+  color: white;
+  background-color: rgba(143, 73, 82, 1) !important;
+  //Used !important to override Angular Material styles
+}
+
+.profile-picture-container button,
+.cover-photo-container button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
